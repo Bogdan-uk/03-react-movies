@@ -12,6 +12,7 @@ if (!token) {
 const axiosInstance = axios.create({
   baseURL: API_BASE,
   headers: {
+
     Authorization: `Bearer ${token}`,
     "Content-Type": "application/json",
   },
