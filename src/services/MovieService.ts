@@ -12,7 +12,7 @@ if (!token) {
 const axiosInstance = axios.create({
   baseURL: API_BASE,
   headers: {
-    Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNjkzZjQzZmQyZTk1Y2QwOTUwZTdkZGQwNmM0NzE3YSIsIm5iZiI6MTc2MjI3MTgwMi43Niwic3ViIjoiNjkwYTIyM2E0NDBlNzViNzczMWU1ZGYwIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.c1_bF--GF3qnn4KIW6tSihpLD0XC58e2ARnHt1t5VSI `,
+    Authorization: `Bearer ${token}`,
     "Content-Type": "application/json",
   },
 });
